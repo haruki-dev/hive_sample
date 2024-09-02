@@ -20,8 +20,10 @@ class _HomePageState extends State<HomePage>{
   @override
   void initState(){
 
-    if(_myBox.get("TODOLIST") == null ){
+    if(_myBox.get("mybox") == null ){
       db.createInitialData();
+    } else {
+      db.loadData();
     }
     
 

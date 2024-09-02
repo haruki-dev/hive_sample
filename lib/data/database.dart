@@ -14,12 +14,12 @@ class ToDoDataBase{
   }
 
   void loadData(){
-    toDoList = _myBox.get("TODOLIST");
+    toDoList = _myBox.get("mybox");
   }
 
 
   void updateDataBase(){
-    _myBox.put("TODOLIST", toDoList);
+    _myBox.put("mybox", toDoList);
 
   }
 
